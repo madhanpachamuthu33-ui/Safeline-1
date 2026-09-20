@@ -140,7 +140,7 @@
         formData.append('image', selectedImageFile);
       }
 
-      const data = await postFormData('api/submit_report.php', formData);
+      const data = await postFormData('submit_report.php', formData);
 
       showTicket(data.report);
       document.getElementById('description').value='';
