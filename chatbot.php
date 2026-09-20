@@ -17,8 +17,8 @@
  * browser session ends.
  */
 
-require_once __DIR__ . '/../config.php';
-require_once __DIR__ . '/../helpers.php';
+require_once __DIR__ . '/config.php';
+require_once __DIR__ . '/helpers.php';
 
 // ---- Configuration --------------------------------------------------------
 // Set this as a real environment variable on your server — never hardcode it
