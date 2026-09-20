@@ -20,11 +20,11 @@ if (is_file($envPath)) {
 }
 
 // Database connection settings — edit these to match your local MySQL setup.
-$DB_HOST = getenv('DB_HOST') ?: '127.0.0.1';
+$DB_HOST = getenv('DB_HOST') ?: 'mysql-36aa0d2c-madhanpachamuthu33-9ddf.a.aivencloud.com';
 $DB_NAME = getenv('DB_NAME') ?: 'safeline';
 $DB_USER = getenv('DB_USER') ?: 'root';
 $DB_PASS = getenv('DB_PASS') ?: '';
-$DB_PORT = getenv('DB_PORT') ?: '3306';
+$DB_PORT = getenv('DB_PORT') ?: '26530';
 $DB_CHARSET = 'utf8mb4';
 
 $dsn = "mysql:host=$DB_HOST;port=$DB_PORT;dbname=$DB_NAME;charset=$DB_CHARSET";
