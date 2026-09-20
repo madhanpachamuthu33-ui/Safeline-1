@@ -436,7 +436,7 @@
   window.setChatbotLanguage = function(language){
     chatbotLanguage = language;
     // Start a fresh conversation server-side so context doesn't mix languages
-    fetch('api/chatbot_reset.php', { method: 'POST' }).catch(()=>{});
+    fetch('chatbot_reset.php', { method: 'POST' }).catch(()=>{});
     chatMessages.innerHTML = '';
     chatOpened = false;
     addChatMessage(greetingFor(chatbotLanguage), 'bot');
@@ -489,7 +489,7 @@
     const typing = addChatMessage('…', 'bot');
 
     try {
-      const res = await fetch('api/chatbot.php', {
+      const res = await fetch('chatbot.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message, language: chatbotLanguage })
