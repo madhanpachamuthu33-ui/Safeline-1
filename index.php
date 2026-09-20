@@ -280,6 +280,6 @@ $adminUsername = $_SESSION['admin_username'] ?? '';
     username: <?php echo json_encode($adminUsername); ?>
   };
 </script>
-<script src="assets/js/main.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
