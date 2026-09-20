@@ -1,4 +1,4 @@
-<?php
+
 <?php
 echo "SafeLine PHP is working!";
 ?>
